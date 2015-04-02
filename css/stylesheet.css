@@ -1,0 +1,102 @@
+/*
+* Font of body
+*/
+@font-face {
+  font-family: 'apercu';
+  src: url('../fonts/apercu_regular.eot.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/apercu_regular.eot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/apercu_regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/apercu_regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/apercu_regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/apercu_regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  font-family: 'apercu';
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Home page features*/
+.home_content {
+	margin-top: 100px;
+}
+
+.home_content__container {
+	min-width: 1200px;
+}
+
+.home_content__header {
+	font-size: 50px;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.home_cotent__feature {
+	width: 100%;
+	height: 360px;
+}
+
+.home_content__feature-text , .home_content__feature-img {
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+
+.home_content__feature-text {
+	height: 360px;
+	padding: 25px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.home_content__feature-text-header {
+	font-size: 30px;
+}
+
+.home_content__feature-img {
+	height: 360px;
+	overflow: hidden;
+}
+
+/*Footer of the pages*/
+.footer {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	background-color: #0070FF;
+	color: white;
+}
+
+.footer_container {
+	width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__rights , .footer__list {
+	display: inline-block;
+}
+
+.footer__list {
+	list-style-type: none;
+}
+
+.footer__list-element {
+	display: inline-block;
+	padding: 10px;
+}
+
+.footer__link {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
