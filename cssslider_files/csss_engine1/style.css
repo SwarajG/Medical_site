@@ -15,7 +15,7 @@
 .csslider1 {
   display: inline-block;
   position: relative;
-  height: 500px;
+  height: 550px;
   width: 100%;
 }
 .csslider1,
@@ -36,7 +36,7 @@
   line-height: 0;
   margin: 0 auto;
   padding: 0;
-  height: 500px;
+  height: 550px;
   overflow: hidden;
   white-space: nowrap;
 }

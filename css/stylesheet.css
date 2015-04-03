@@ -25,7 +25,33 @@ body {
   box-sizing: border-box;
 }
 
+/*Navbar Style*/
+.navbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(0 , 112 , 255 , 0.3);
+}
+
+.navbar__ul {
+	float: right;
+	list-style-type: none;
+}
+
+.navbar__list {
+	display: inline-block;
+	padding: 10px 50px;
+}
+
+.navbar__link {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
 /*Home page features*/
+
 .home_content {
 	margin-top: 100px;
 }
