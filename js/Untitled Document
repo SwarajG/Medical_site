@@ -1,0 +1,24 @@
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 300,
+            header = document.querySelector(".navbar__ul");
+            header_list = document.getElementsByClassName(".navbar__list");
+            header_link = document.getElementsByClassName(".navbar__link");
+            header_submenu = document.getElementsByClassName(".navbar__submenu");
+        if (distanceY > shrinkOn) {
+        		$(header).addClass("smaller");
+        		$(".navbar__list").addClass("smaller");
+        		$(".navbar__link").addClass("smaller");
+        		$(".navbar__submenu").addClass("smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+            		$(header).removeClass("smaller");
+		        		$(".navbar__list").removeClass("smaller");
+        				$(".navbar__link").removeClass("smaller");
+        				$(".navbar__submenu").removeClass("smaller");
+            }
+        }
+    });
+	}
+	window.onload = init();
