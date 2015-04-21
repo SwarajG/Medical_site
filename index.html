@@ -13,37 +13,54 @@
 	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	
 	<!-- Navbar code -->
 	<nav class="navbar">
-		<ul class="navbar__ul">
-			<li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
-			<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
-			<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
-				<ul class="navbar__submenu">
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Feature A</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">Feature B</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature C</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature D</a></li>
-				</ul>
-			</li>
-			<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
-			<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
-		</ul>
-		<a href="#" id="pull">Menu</a>
+		<div class="navbar__container">
+			<ul class="navbar__ul">
+				<li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
+				<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
+				<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
+					<ul class="navbar__submenu">
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Nutrition Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">BMI Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Calorific Value Chart</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Balanced Diet Charts</a></li>
+					</ul>
+				</li>
+				<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
+				<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</div>
 	</nav>
 
 	<!-- Feature 1 link model -->
     <div id="modal1" class="popup" style="display:none;">
       <section class="popup__body">
-        <h1>HELLO FEATURE 1</h1>
+        <h1>HELLO FEATURE 2</h1>
       </section>
     </div>
   <!-- End to model box -->
 
-  <!-- Feature 2 link model -->
+	<!-- Feature 2 link model -->
     <div id="modal2" class="popup" style="display:none;">
       <section class="popup__body">
-        <h1>HELLO FEATURE 2</h1>
+      	<div class="popup__header">
+      		BMR Calculator
+      	</div>
+      	<p class="popup__BMI-details">
+      		BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25. A score below 20 indicates that you may be underweight; a value above 25 indicates that you may be overweight.Please remember, however, that this is only one of many possible ways to assess your weight. If you have any concerns about your weight, please discuss them with your physician, who is in a position, unlike this BMI calculator, to address your specific individual situation.
+      	</p>
+      	<form class="popup__form">
+	      	<input type="text"  class = "popup__input" id="height" placeholder = "Height in cm" autocomplete="off">
+	      	<input type="text" class = "popup__input" id="weight" placeholder = "Weight in kilo" autocomplete="off">
+	      	<br>
+	      	<input type="radio" id="male" name ="Male" value = "male"/> Male
+	      	<input type="radio" id="female" name="Female" value="female" /> Female<br>
+	      	<input type="text" class = "popup__input" id="age" placeholder = "Age in year" autocomplete="off"><br>
+	      	<button id="check">Submit</button>
+      	</form>
       </section>
     </div>
   <!-- End to model box -->
@@ -116,12 +133,12 @@
 					</p>
 				</div>
 				<div class="home_content__feature-img">
-					<img src="img/photo1422310299561e3b8b45d859f.jpg">
+					
 				</div>
 			</div>
 			<div class="home_cotent__feature">
 				<div class="home_content__feature-img">
-					<img src="img/photo1422310299561e3b8b45d859f.jpg">
+					
 				</div>
 				<div class="home_content__feature-text">
 					<p class="home_content__feature-text-header">Tital one</p>
@@ -138,12 +155,12 @@
 					</p>
 				</div>
 				<div class="home_content__feature-img">
-					<img src="img/photo1422310299561e3b8b45d859f.jpg">
+					
 				</div>
 			</div>
 			<div class="home_cotent__feature">
 				<div class="home_content__feature-img">
-					<img src="img/photo1422310299561e3b8b45d859f.jpg">
+					
 				</div>
 				<div class="home_content__feature-text">
 					<p class="home_content__feature-text-header">Tital one</p>

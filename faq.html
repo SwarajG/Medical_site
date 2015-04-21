@@ -10,69 +10,234 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<!-- Navbar code -->
 	<nav class="navbar">
-		<ul class="navbar__ul">
-			<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
-			<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
-				<ul class="navbar__submenu">
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Feature A</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">Feature B</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature C</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature D</a></li>
-				</ul>
-			</li>
-			<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
-			<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
-		</ul>
-		<a href="#" id="pull">Menu</a>
+		<div class="navbar__container">
+			<ul class="navbar__ul">
+				<li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
+				<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
+				<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
+					<ul class="navbar__submenu">
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Nutrition Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">BMI Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Calorific Value Chart</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Balanced Diet Charts</a></li>
+					</ul>
+				</li>
+				<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
+				<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</div>
 	</nav>
 
 	<!-- FAQs -->
 
-	<section class="faq">
+	<section class="faq" style="margin-top:150px">
       <div class="faq__container">
         <div class="faq__header">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
         </div>
+				<div class="faq__subheader">
+					Website
+				</div>
         <div class="faq__question">
-            <div id="custom-show-hide-example">
-              <h3 class="faq__questions--header">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h3>
+            <div id="custom-show-hide-example1">
+              <h3 class="faq__questions--header">Do you recommend a vegetarian or a vegan diet?</h3>
               <div class="faq__questions--answer">
                 <p class="faq__question--answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  Vegetarian diets, which contain no meat (beef, pork, poultry, or fish and shellfish), are naturally low in saturated fat, high in fiber, and full of vitamins, minerals, and cancer-fighting compounds. A multitude of scientific studies have shown that vegetarian diets have remarkable health benefits and can help prevent certain diseases, such as cancer, diabetes, and heart disease. We encourage vegetarian diets as a way of improving general health and preventing diet-related illnesses.
+									Vegan diets, which contain no animal products (meat, dairy, eggs, or other animal products), are even healthier than vegetarian diets. Vegan diets contain no cholesterol and even less fat, saturated fat, and calories than vegetarian diets because they exclude dairy and eggs. Scientific research shows that health benefits increase as the amount of food from animal sources in the diet decreases, making vegan diets the healthiest overall.
                 </p>
               </div>
-              <h3 class="faq__questions--header">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h3>
+              <h3 class="faq__questions--header">I want to try a vegan diet. How should I start?</h3>
               <div>
                 <p class="faq__question--answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  If a plant-based diet is new to you, you’ll be pleased to discover a wonderful additional benefit to vegan nutrition: It’s a fun way to explore delicious new foods. Start by checking out our Vegetarian Starter Kit, which explains the New Four Food Groups and offers useful tips, the “whys” and “hows” of a healthier diet, and easy-to-make recipes. To order a Vegetarian Starter Kit, please visit PCRM's literature store. Want more recipes? Go to www.NutritionMD.org. Three times a year, PCRM hosts a free, online program that walks you through how to adopt a vegan diet for three weeks. We provide menus, celebrity tips, nutrition information, and so much more. Register for the next program at 21DayKickstart.org.
                 </p>
               </div>
-              <h3 class="faq__questions--header">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h3>
+              <h3 class="faq__questions--header">Is it healthy for children to be on a vegan diet?</h3>
               <div>
                 <p class="faq__question--answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  A well-balanced vegan diet is safe and healthy for any stage of life, including infancy, childhood, adolescence, and during pregnancy. Plant-based diets can easily provide all essential nutrients, vitamins, and minerals that growing children and mothers-to-be need. Simply have a variety of whole grains, beans, vegetables, and fruits, and be sure to include a daily source of vitamin B12, such as any common multiple vitamin. Plant-based diets have many important health advantages: Vegans enjoy a reduced risk of heart disease, diabetes, and some types of cancer. Since eating habits are established in early childhood, choosing a vegan diet can give your child the opportunity to enjoy a variety of nutritious foods—and to carry those healthy eating habits into adulthood. Learn more about vegan nutrition for children. Learn more about building strong bones in children. Read more about our book Healthy Eating for Life for Children.
                 </p>
               </div>
-              <h3 class="faq__questions--header">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h3>
+              <h3 class="faq__questions--header">How do I get protein on a vegan diet? Do I need to combine proteins?</h3>
               <div>
                 <p class="faq__question--answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  Protein is an important nutrient required for the building, maintenance, and repair of tissues in the body. It was once thought that various plant foods had to be eaten together to get their full protein value; this practice was known as “protein combining” or “protein complementing.” We now know that intentional combining is not necessary. As long as the diet contains a variety of grains, legumes, and vegetables, protein needs are easily met. Especially protein-rich vegan foods include soy-based products like tofu, tempeh (a fermented soybean product), seitan (a meat substitute made from a wheat protein called gluten), black beans, lentils, chickpeas, grains such as quinoa and bulgur, and whole-wheat bread. Learn more about getting protein on a vegan diet.
                 </p>
               </div>
-              <h3 class="faq__questions--header">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h3>
+              <h3 class="faq__questions--header">How do I get enough calcium on a vegan diet? What about osteoporosis? </h3>
               <div>
                 <p class="faq__question--answer">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  By eating calcium-rich vegan foods, including leafy green vegetables such as broccoli and kale, white beans, fortified soymilks and juices, and a variety of fruits and vegetables, you can obtain all the calcium your body needs. But keeping your bones strong and avoiding osteoporosis depends on more than calcium intake—you also need to keep calcium in your bones. Exercise and vitamin D help keep the calcium in your bones, while animal protein, excess salt and caffeine, and tobacco can cause calcium loss. Learn how to prevent and reverse osteoporosis. Learn more about getting calcium on a vegan diet.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">What’s wrong with drinking milk? Is organic milk better? Is soymilk a safer alternative? What about other dairy products? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  Milk contains animal fat, saturated fat, and cholesterol, and diets high in these substances increase the risk of several chronic diseases, including cardiovascular disease. Other dairy products, such as cheese, yogurt, butter, and ice cream, also contribute significant amounts of cholesterol and fat to the diet. Even low-fat and fat-free milk and dairy products carry health risks because of cholesterol. In addition, natural and artificial hormones are present in all types of milk and dairy products, regardless of fat. Organic milk may not contain the pesticides and antibiotics that nonorganic milk contains, but it is still high in fat and cholesterol. Organic cow’s milk, which does not contain artificial hormones, does contain naturally occurring hormones. The combination of nutrients found in both organic and nonorganic cow’s milk increases our own production of some types of hormones. These hormones have been shown to increase the risk of some forms of cancer. Here are eight great health reasons to eliminate milk, cheese, and other dairy products from your diet. Soymilk and other nondairy beverages, such as rice and nut milks, are healthy alternatives to cow’s milk. These beverages come in different flavors, and many of them are fortified with calcium and vitamin D.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Is it safe to eat soybeans and other soy foods?</h3>
+							<div>
+                <p class="faq__question--answer">
+                  Recently, questions have been raised about the possible health risks of soy consumption, but the overwhelming majority of studies on soy have shown positive health effects with no adverse effects. Eating soy in moderation is appropriate for a healthy diet. There have been concerns about processed soy products, such as “mock meats,” but moderate intakes of these foods are not known to cause health problems. Some soy products are high in sodium and contain a higher-than-healthy level of fat, so be sure to check the labels and choose the healthier versions. Nonetheless, these foods are much healthier than the animal-derived foods they are intended to replace. If you do choose to avoid soy, you will find it can be easily replaced with other foods. Lentils, beans, and other legumes are a hearty and delicious source of plant-based protein and other nutrients. They are also the richest source of dietary fiber. 
+                </p>
+              </div>
+              <h3 class="faq__questions--header">What are the safest types of fish to eat? Aren’t fish the best source of omega-3 fatty acids? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  PCRM does not recommend eating any fish or shellfish because they can contain unsafe levels of contaminants and are often high in mercury and other environmental toxins that have no place in a healthy diet. Fish also contain no fiber and are high in animal protein, and often, in saturated fat and cholesterol.
+
+									The most nutritious sources of omega-3 and omega-6 fatty acids are plant-based foods, including green leafy vegetables, legumes, wheat germ, soybeans, and ground flaxseeds. We do not recommend fish or fish oil as a healthy source of essential fatty acids. By getting omega-3 and omega-6 fatty acids and protein from plant-based foods, you can avoid the health risks associated with fish consumption.
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> What is the best way to get vitamin B12? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  Individuals following a vegan diet can readily meet their vitamin B12 with a common daily multiple vitamin or fortified foods, such as vitamin B12-fortified breakfast cereals, soymilk, meat analogues, and nutritional yeast.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">What’s the best diet for weight loss?</h3>
+							<div>
+                <p class="faq__question--answer">
+                  Both short-term and long-term, the most effective weight loss comes from avoiding animal products and keeping fats, vegetable oils, and highly processed foods to a minimum. In addition, it helps to keep the natural fiber in the foods you eat. This means eating whole-grain breads instead of white bread, brown rice instead of white rice, and plenty of fruits, vegetables, and legumes (beans, peas, and lentils). And don’t forget the importance of physical activity for achieving and maintaining a healthy weight.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Are carbohydrates bad for you? Is it OK to eat carbohydrates if I am trying to lose weight?</h3>
+							<div>
+                <p class="faq__question--answer">
+                 Carbohydrate-rich foods help with permanent weight control because they contain less than half the calories of fat, which means that replacing fatty foods with complex carbohydrates automatically cuts calories.
+								 It’s important to remember to eat healthful carbohydrates, such as whole grains, pasta, brown rice, and sweet potatoes. Processed carbohydrates, such as white bread and white rice, are not as healthful because they have lost much of their fiber and other nutrients. Read our report about health risks associated with high-fat, high-protein, carbohydrate-restricted diets.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Should I be on a gluten-free diet?</h3>
+							<div>
+                <p class="faq__question--answer">
+                For most Americans gluten is not an issue, but it can be a serious problem for the 1 percent of the population with celiac disease (gluten intolerance). Sometimes individuals may not have celiac disease but can have a sensitivity to gluten. Gluten sensitivities affect roughly 6 percent of Americans and can be managed by a gluten-free diet. However, if you suspect you are sensitive to gluten, see your doctor before going on a gluten-free diet. Varying the grains in your diet—not relying on just gluten-containing grains like wheat, barley, and rye—is a viable solution.
+								The most important action is to get a proper diagnosis from your doctor. Some of the most common symptoms are not exclusive to celiac disease or gluten sensitivity. Here are a few examples of symptoms to keep in mind: diarrhoea, unexpected weight loss, vomiting, anaemia, abdominal pain and distention, fatigue, joint pain, foggy mind, and tingling of the extremities. If any of these symptoms persist, it’s best to seek medical attention.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Is the Atkins diet healthy/safe? What about other low-carb diets?</h3>
+							<div>
+                <p class="faq__question--answer">
+                The Atkins diet and other low-carb fad diets, which are high in fat and protein and severely restrict carbohydrates, are not healthy approaches to losing weight. High-fat, high-protein diets are associated with many health risks, ranging from mild (constipation, headache, and bad breath) to significant (impaired kidney function, osteoporosis, heart disease, diabetes, and cancer).
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Is it true that some foods are addictive?</h3>
+							<div>
+                <p class="faq__question--answer">
+                Studies suggest that cheese, chocolate, sugar, and meat all spark the release of opiate-like substances that trigger the brain’s pleasure center and seduce us into eating them again and again. These foods stimulate the same opiate receptors in your brain as heroin or morphine, but to a much lesser degree. In research studies, drugs used to block the effects of heroin and morphine can also reduce or end the appeal of these four foods. Luckily, there are many healthy dietary and lifestyle changes you can make to break food addictions.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Someone in my family was diagnosed with cancer: What dietary recommendations would you offer him or her?</h3>
+							<div>
+                <p class="faq__question--answer">
+                First of all, be sure to get appropriate medical care and to use a healthy diet in addition to, not instead of, medical care. That said, scientific studies have shown that a low-fat, vegetarian or vegan diet can help in cancer prevention and survival. PCRM recommends replacing meat, dairy products, and other animal products with healthful, low-fat meals rich in whole grains, legumes, fruits, and vegetables. These foods are rich in fibers, vitamins, minerals, and cancer-fighting compounds. And they do not contain the high amounts of fat and cholesterol found in meat and other animal products. During medical treatment for cancer, your family member should consult his or her medical care team for any specific dietary recommendations related to the type of cancer or treatment.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Is it possible to lower blood pressure with diet? If so, how?</h3>
+							<div>
+                <p class="faq__question--answer">
+                Changing the way you eat can often lower your blood pressure and reduce or eliminate the need for medication. You can also lower your blood pressure by losing weight, limiting alcohol, avoiding tobacco, and becoming physically active. People who follow vegetarian and vegan diets typically have lower blood pressure.
+								If you have high blood pressure, you should consult your physician.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Are there natural approaches to menopause?</h3>
+							<div>
+                <p class="faq__question--answer">
+                Women can make many dietary and lifestyle changes to ease the pain and discomfort of menopause without the side effects of oestrogen. For example, switching to a vegan diet is better for your heart and bones than oestrogen prescriptions. Learn more about a natural approach to menopause.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- FAQs -->
+		<section class="faq">
+      <div class="faq__container">
+      	<div class="faq__subheader">
+      		Health
+      	</div>
+        <div class="faq__question">
+            <div id="custom-show-hide-example2">
+              <h3 class="faq__questions--header"> Does excessive eating of salt increase blood pressure? </h3>
+							<div>
+                <p class="faq__question--answer">
+                Yes and No<br>
+								Yes in certain individuals who are salt sensitive, while this does not happen in those who are salt insensitive.
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> What are the foods to be avoided by BP patients </h3>
+							<div>
+                <p class="faq__question--answer">
+                 (a) Salted snacks e.g. Potato wafers<br>
+								 (b) Pickles and papads<br>
+								 (c) Ketchups<br>
+								 (d) Salted meat / salted sea food<br>
+								 (e) Excess of fat  <br>
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> Will eating fruits cause cold? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  Cold is caused by a virus. Most fruits rich in vitamin C (like oranges), in fact can protect against frequent attacks of cold. Some people may be allergic to certain foods which may include fruits. They should find out by trial and error and try and avoid only those fruits.
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> Is it good to drink water while eating? Will it reduce digestion? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  There is no evidence to suggest this. Some feel that it may dilute the digestive enzymes, but this does not occur, because the intestines produce several times more enzymes than what is actually required for digestion. Water intake may however fill the stomach and thereby give a feeling of fullness. This is common among children. 
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> Are artificial sweeteners harmful? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  Scientific data does not indicate that either saccharine or aspartame are harmful to humans.
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Which is the best source of calcium? Will calcium tablets prevent fracture? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  Best source of calcium is milk. To a certain extent calcium tablets @ 500 mg/day would help. Women should take calcium well before onset of menopause, as more than 50% of the calcium in the bones is lost during the first 5 years of menopause itself.  
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> Which of the cooking oils are good for health? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  All oils are good in one way or the other. Groundnut oil, mustard oil are very good. It is always suggested to use a combination of oils either blended or by rotation. e.g. Groundnut oil, soya bean oil, sunflower oil, rice bran oil so that you get the benefit of all. Sunflower / any single oil alone is not preferred.  
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Which is the best way to lose weight? </h3>
+							<div>
+                <p class="faq__question--answer">
+                  A combination of physical activity of atleast a 30 minute walk per day with a moderation in calorie intake would do wonders. Drastic weight loss programs can be rarely sustained. Just avoiding refined sugars, disserts, deep fried foods, dairy and bakery products, aerated bottled drinks itself can cut down a large amount of calories. Consuming atleast 400 gms of fruits and vegetables can also avoid the hunger.
+                </p>
+              </div>
+              <h3 class="faq__questions--header"> Will eating tomatoes and palak cause stones in the kidney?</h3>
+							<div>
+                <p class="faq__question--answer">
+                  No! These are unfounded fears. Eating tomatoes and palak may be little harmful to those who are prone to the problem of formation of stones in the kidneys. 
+                </p>
+              </div>
+              <h3 class="faq__questions--header">Is alcohol drinking good for the heart?</h3>
+							<div>
+                <p class="faq__question--answer">
+                  Alcohol in moderate i.e. 30-60 ml/day has been shown to be beneficial. Red wines in addition has anticancer effects. But if you are not used to drinking, there is no advantage in starting it now. If you are already used to it then limiting to 30-60 ml/day is beneficial and anything beyond has the opposite effects. 
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 		
 	<footer class="footer">
 		<div class="footer__container">
@@ -96,7 +261,7 @@
 <script type="text/javascript" src="js/home.js"></script>
 <script src="js/jquery.collapse.js"></script>
 <script>
-    new jQueryCollapse($("#custom-show-hide-example"), {
+    new jQueryCollapse($("#custom-show-hide-example1"), {
       open: function() {
         this.slideDown(150);
       },
@@ -104,5 +269,15 @@
         this.slideUp(150);
       }
     });
+</script>
+<script>
+  new jQueryCollapse($("#custom-show-hide-example2"), {
+    open: function() {
+      this.slideDown(150);
+    },
+    close: function() {
+      this.slideUp(150);
+    }
+  });
 </script>
 </html>

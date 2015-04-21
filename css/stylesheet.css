@@ -11,6 +11,10 @@ a {
 	color: inherit;
 }
 
+a:hover , a:visited , a:focus {
+	outline: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -26,16 +30,41 @@ a {
 	background-color: rgba(0 , 112 , 255 , 0.9);
 }
 
+.navbar__container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
 #logo {
-	margin-right: 450px;
+	position: absolute;
+	float: left;
+	left: 2%;
 	padding: 0;
-	margin-top: 0;
 }
 
 .navbar__logo {
 	font-size: 50px;
 	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-family: 'Armata', sans-serif;
+}
+
+#logo{
+	position: absolute;
+	float: left;
+	right: 80%;
+	padding: 0;
+	font-size: 30px;
+}
+
+.navbar__logo.smaller {
+	position: absolute;
+	float: left;
+	right: 50%;
+	font-size: 30px;
+	padding: 0;
 }
 
 .navbar__ul {
@@ -55,9 +84,10 @@ a {
 	display: inline;
 	float: left;
 	padding-top: 40px;
-	padding-bottom: 25px;
+	padding-bottom: 40px;
 	right: 0;
 	max-height: 100px;
+	outline: 0;
 }
 
 .navbar__link {
@@ -104,23 +134,25 @@ a {
 	padding-top: 25px;
 }
 
-.navbar__submenu.smaller {
-	margin-top: 25px;
-}
-
 .navbar__submenu {
-	width: 190px;
+	width: 191px;
 	list-style-type: none;
 	margin-top: 40px;
 	margin-left: -40px;
 }
 
+.navbar__submenu.smaller {
+	margin-top: 25px;
+}
+
+
 .navbar__submenu_list {
-	color: black;
-	padding: 15px 0;
+	width: 300px;
+	padding: 15px 30px;
 	max-height: 50px;
-	text-align: center;
 	background-color: white;
+	color: black;
+	text-align: left;
 		/* For font color */
   -moz-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
@@ -179,10 +211,39 @@ a {
 .popup__body {
   margin-top: -150px;
   padding:20px;
-  background-color: #E3E6E7;
+  background-color: white;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													;
   border-radius: 5px;
 }
 
+.popup__header {
+	font-size: 30px;
+	text-align: center;
+}
+
+.popup__BMI-details {
+	font-size: 14px;
+	padding: 10px;
+	text-indent: 20px;
+}
+
+.popup__input {
+	width: 300px;
+	padding: 8px 10px;
+	margin: 10px;
+}
+
+#male {
+	margin-left: 15px;
+}
+
+.popup__form {
+	padding: 10px;
+	text-align: center;
+}
+
+.pupup__submit {
+
+}
 
 /* Home page features */
 
@@ -226,6 +287,10 @@ a {
 
 .home_content__feature-img {
 	height: 360px;
+	background: url('../img/photo1422310299561e3b8b45d859f.jpg') no-repeat center center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 }
 
@@ -238,8 +303,8 @@ a {
 
 /*FAQs*/
 .faq {
-  height: 480px;
-  margin-top: 100px;
+  max-height: 10000px;
+  margin-top: 50px;
   outline: 0;
 }
 .faq__container {
@@ -256,6 +321,11 @@ a {
 .faq__header {
   margin-left: 50px;
   font-size:24px;
+}
+
+.faq__subheader {
+	margin-left: 45px;
+	font-size: 30px;
 }
 
 .faq__questions--header {
@@ -344,6 +414,7 @@ a {
 	transition: all 0.3s;
 	border: 2px solid #0A0A0B;
 	color: black;
+	margin-right: -150px;
 }
 
 .btn:after {
@@ -452,6 +523,10 @@ a {
 		display: inline-block;
 	}
 
+	.navbar__logo {
+		display: none;
+	}
+
 	.navbar__list {
 		position: relative;
 		width: 50%;
@@ -486,6 +561,10 @@ a {
 		color: white;
 		z-index: 100;
 		border-bottom: 1px solid white;
+	}
+
+	.navbar__logo {
+		display: none;
 	}
 
 	#pull {

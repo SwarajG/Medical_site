@@ -11,24 +11,29 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
+	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>	
+	
 	<!-- Navbar code -->
 	<nav class="navbar">
-		<ul class="navbar__ul">
-			<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
-			<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
-				<ul class="navbar__submenu">
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Feature A</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">Feature B</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature C</a></li>
-					<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Feature D</a></li>
-				</ul>
-			</li>
-			<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
-			<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
-		</ul>
-		<a href="#" id="pull">Menu</a>
+		<div class="navbar__container">
+			<ul class="navbar__ul">
+				<li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
+				<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
+				<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
+					<ul class="navbar__submenu">
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Nutrition Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">BMI Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Calorific Value Chart</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Balanced Diet Charts</a></li>
+					</ul>
+				</li>
+				<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
+				<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</div>
 	</nav>
 
 	<h1 class="contact_header">Contact Us</h1>
@@ -46,7 +51,9 @@
 			<i class="flaticon-drawing4"></i>
 			<input type = "text" class="form__input" placeholder="Messsage">
 		</div>
-		<button class="btn">Submit</button>
+		<div class="form__input-div">
+			<button class="btn">Submit</button>
+		</div>
 	</form>
 
 	<!-- Starting of contact -->
