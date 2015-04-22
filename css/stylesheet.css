@@ -233,7 +233,9 @@ a:hover , a:visited , a:focus {
 }
 
 #male {
-	margin-left: 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: -155px;
 }
 
 .popup__form {
@@ -292,6 +294,86 @@ a:hover , a:visited , a:focus {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+}
+
+.chart {
+	padding: 0;
+	text-align: left;
+}
+
+.chart__container {
+	min-width: 1200px;
+	margin: 0 auto;
+}
+
+.chart__header {
+	font-size: 32px;
+	text-align: center;
+}
+
+/*Feature Page*/
+
+.nut_cal {
+	text-align: left;
+	margin-top: 150px;
+}
+
+.nut_cal__form {
+	text-align: center;
+}
+
+.nut_cal__det ,
+.nut_cal__form {
+	display: inline-block;
+	width: 50%;
+}
+
+.nut_cal__det {
+	vertical-align: top;
+}
+
+.nut_cal__form {
+	margin: 0;
+	margin-left: -6px;
+}
+
+.nut_cal__container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.img__link {
+	text-decoration: underline;
+	color: blue;
+}
+
+.nut_cal__header {
+	color: black;
+	font-size: 40px;
+}
+
+.nut_cal__subheader {
+	text-align: left;
+}
+
+.nut_cal__description {
+	text-align: left;
+}
+
+.chart_one ,
+.chart_two {
+	margin-top: 100px;
+}
+
+.chart_one__container , 
+.chart_two__container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.chart_two {
+	margin-top: 100px;
 }
 
 /* Contact page */
@@ -412,7 +494,7 @@ a:hover , a:visited , a:focus {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	border: 2px solid #0A0A0B;
+	border: 2px solid #0E5066;
 	color: black;
 	margin-right: -150px;
 }
@@ -427,8 +509,19 @@ a:hover , a:visited , a:focus {
 }
 
 .btn:hover {
-	background-color: black;
+	background-color: #2185C5;
+	border-color: white;
 	color: white;
+}
+
+.btn--check {
+	width: 300px;
+	margin-left: -150px;
+}
+
+.btn--nut_cal {
+	width: 300px;
+	margin-left: -150px;
 }
 
 /* Contact section */
@@ -542,6 +635,25 @@ a:hover , a:visited , a:focus {
 		padding: 16px;
 		text-align: center;
 	}
+
+	#logo {
+		display: none;
+	}
+	
+	.navbar__submenu {
+		display: none;
+	}
+
+	.footer__list {
+		list-style-type: none;
+		display: block;
+	}
+	
+	.footer__rights {
+		display: none;
+	}
+	
+
 }
 
 /******************************************************************/
@@ -563,7 +675,11 @@ a:hover , a:visited , a:focus {
 		border-bottom: 1px solid white;
 	}
 
-	.navbar__logo {
+	#logo {
+		display: none;
+	}
+
+	.navbar__submenu {
 		display: none;
 	}
 
@@ -591,6 +707,15 @@ a:hover , a:visited , a:focus {
 		display: inline-block;
 	}
 
+	.footer__list {
+		list-style-type: none;
+		display: block;
+	}
+
+	.footer__rights {
+		display: none;
+	}
+
 }
 
 /******************************************************************/
@@ -602,4 +727,16 @@ a:hover , a:visited , a:focus {
         float: left;
         width: 100%;
     }
+    .navbar__submenu {
+			display: none;
+		}
+
+		.footer__list {
+			list-style-type: none;
+			display: block;
+		}
+
+		.footer__rights {
+			display: none;
+		}
 }

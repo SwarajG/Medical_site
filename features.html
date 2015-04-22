@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 </head>
 <body>
 	
@@ -22,10 +24,10 @@
 				<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
 				<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
 					<ul class="navbar__submenu">
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Nutrition Calculator</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">BMI Calculator</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Calorific Value Chart</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Balanced Diet Charts</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">BMI Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Nutrition Calculator</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Calorific Value Chart</a></li>
+						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Balanced Diet Charts</a></li>
 					</ul>
 				</li>
 				<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
@@ -34,6 +36,232 @@
 			<a href="#" id="pull">Menu</a>
 		</div>
 	</nav>
+
+	<!-- Feature 1 link model -->
+    <div id="modal1" class="popup" style="display:none;">
+      <section class="popup__body">
+      	<div class="popup__header">
+      		BMR Calculator
+      	</div>
+      	<p class="popup__BMI-details">
+      		BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25. A score below 20 indicates that you may be underweight; a value above 25 indicates that you may be overweight.Please remember, however, that this is only one of many possible ways to assess your weight.
+      	</p>
+      	<form class="popup__form">
+	      	<input type="text"  class = "popup__input" id="height" placeholder = "Height in cm" autocomplete="off">
+	      	<input type="text" class = "popup__input" id="weight" placeholder = "Weight in kilo" autocomplete="off"><br>	      	
+	      	<p class="output"></p>
+	      	<button id="check" class="btn btn--check">Submit</button>
+      	</form>
+
+      </section>
+    </div>
+  <!-- End to model box -->
+
+	<div class="features">
+		<div class="features__container">
+			<section class="nut_cal">
+				<div class="nut_cal__container">
+					<div class="nut_cal__det">
+						<h1 class="nut_cal__header">Nutrition Calculator</h1>
+						<h2 class="nut_cal__subheader">Description :</h2>
+						<p class="nut_cal__description">
+							In order to calculate the nutrition requirements (calorie consuption) for every day we are using standard BMR calculations.The BMR formula uses the variables of height, weight, age and gender to calculate the Basal Metabolic Rate (BMR). This is more accurate than calculating calorie needs based on body weight alone. 
+						</p>
+						<h2 class="nut_cal__subheader">Modification in BMR :</h2>
+						<p class="nut_cal__description">
+							The only factor it omits is lean body mass and thus the ratio of muscle-to-fat a body has. Remember,leaner bodies need more calories than less leaner ones. Therefore, this equation will be very accurate in all but the very muscular (will underestimate calorie needs) and the very fat (will over-estimate calorie needs).But using reliable soruces we have eliminated the percentage of error by adjusting the BMR value according to body fat.
+						</p>
+					</div>
+					<form class="nut_cal__form">
+						<input type="text" class="popup__input" placeholder = "Height" id="height_2" autocomplete="off"><br>
+						<input type="text" class="popup__input" placeholder = "Weight" id="weight_2" autocomplete="off"><br>
+						<input type="text" class="popup__input" placeholder = "Age" id="age_2" autocomplete="off"><br>
+						<input type="checkbox" id="male" name ="Male" value = "male"/> Male
+		      	<input type="checkbox" id="female" name="Female" value="female" /> Female<br>
+						<select style="margin-top:20px;margin-left:115px;" id="fat">
+							<option value="low" >Low ( < 14% )</option>
+							<option value="medium">Medium ( 14% to 22% )</option>
+							<option value="high">High ( >22% )</option>
+						</select>
+						Examples : <a class="img__link" 
+						href="http://www.builtlean.com/wp-content/uploads/2012/09/body-fat-percentage-men.jpg" target="_blank">men</a> | <a  class="img__link" href="http://www.builtlean.com/wp-content/uploads/2012/09/body-fat-percentage-women.jpg" target="_blank">women</a><br>
+						<select style="margin-top:50px;margin-left:-110px;" id="work">
+							<option value="sedentary">Sedentary</option>
+							<option value="lightly_active">Lightly active</option>
+							<option value="moderatetely_active">Moderatetely active</option>
+							<option value="very_active">Very active</option>
+							<option value="extra_active">Extra active</option>
+						</select><br>
+						<button class="btn btn--nut_cal" id="check_nut">Submit</button>
+					</form>
+				</div>
+			</section>
+
+			
+			<section class="chart_one" id="one">
+				<div class="chart_one__container">
+					<table>
+						<thead>
+							<tr>
+								<th>Sample ID</th>
+								<th>Reading #1</th>
+								<th>Reading #2</th>
+								<th>Reading #3</th>
+								<th>Reading #4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Sample #1</th>
+								<td>52</td>
+								<td>40</td>
+								<td>9</td>
+								<td>47</td>
+							</tr>
+							<tr>
+								<th>Sample #2</th>
+								<td>27</td>
+								<td>55</td>
+								<td>97</td>
+								<td>52</td>
+							</tr>
+							<tr>
+								<th>Sample #3</th>
+								<td>36</td>
+								<td>68</td>
+								<td>89</td>
+								<td>78</td>
+							</tr>
+							<tr>
+								<th>Sample #4</th>
+								<td>95</td>
+								<td>46</td>
+								<td>62</td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<th>Sample #5</th>
+								<td>19</td>
+								<td>66</td>
+								<td>31</td>
+								<td>99</td>
+							</tr>
+							<tr>
+								<th>Sample #6</th>
+								<td>57</td>
+								<td>15</td>
+								<td>57</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th>Sample #7</th>
+								<td>69</td>
+								<td>46</td>
+								<td>16</td>
+								<td>33</td>
+							</tr>
+							<tr>
+								<th>Sample #8</th>
+								<td>18</td>
+								<td>93</td>
+								<td>84</td>
+								<td>57</td>
+							</tr>
+							<tr>
+								<th>Sample #9</th>
+								<td>92</td>
+								<td>10</td>
+								<td>69</td>
+								<td>35</td>
+							</tr>
+							<tr>
+								<th>Sample #10</th>
+								<td>4</td>
+								<td>87</td>
+								<td>51</td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<th>Sample #11</th>
+								<td>24</td>
+								<td>23</td>
+								<td>85</td>
+								<td>34</td>
+							</tr>
+							<tr>
+								<th>Sample #12</th>
+								<td>92</td>
+								<td>6</td>
+								<td>67</td>
+								<td>65</td>
+							</tr>
+							<tr>
+								<th>Sample #13</th>
+								<td>10</td>
+								<td>77</td>
+								<td>64</td>
+								<td>51</td>
+							</tr>
+							<tr>
+								<th>Sample #14</th>
+								<td>85</td>
+								<td>42</td>
+								<td>90</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<th>Sample #15</th>
+								<td>34</td>
+								<td>48</td>
+								<td>38</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<th>Sample #16</th>
+								<td>26</td>
+								<td>72</td>
+								<td>47</td>
+								<td>27</td>
+							</tr>
+							<tr>
+								<th>Sample #17</th>
+								<td>79</td>
+								<td>86</td>
+								<td>85</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<th>Sample #18</th>
+								<td>39</td>
+								<td>68</td>
+								<td>91</td>
+								<td>71</td>
+							</tr>
+							<tr>
+								<th>Sample #19</th>
+								<td>70</td>
+								<td>4</td>
+								<td>59</td>
+								<td>82</td>
+							</tr>
+							<tr>
+								<th>Sample #20</th>
+								<td>63</td>
+								<td>16</td>
+								<td>62</td>
+								<td>13</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<section class="chart_two" id="two">
+				<div class="chart_two__container">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+				</div>
+			</section>
+		</div>
+	</div>
 	
 	<footer class="footer">
 		<div class="footer__container">
@@ -48,11 +276,10 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<script type="text/javascript">
-  $("#modal_trigger1").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-  $("#modal_trigger2").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-</script>
 <script src="https://use.fonticons.com/f733972f.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+
 </html>

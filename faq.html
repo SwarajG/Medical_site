@@ -13,26 +13,47 @@
 	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<!-- Navbar code -->
-	<nav class="navbar">
-		<div class="navbar__container">
-			<ul class="navbar__ul">
-				<li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
-				<li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
-				<li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
-					<ul class="navbar__submenu">
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">Nutrition Calculator</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger2" href="#modal2">BMI Calculator</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Calorific Value Chart</a></li>
-						<li class="navbar__submenu_list"><a class="navbar__submenu_link" href="#">Balanced Diet Charts</a></li>
-					</ul>
-				</li>
-				<li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
-				<li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
-			</ul>
-			<a href="#" id="pull">Menu</a>
-		</div>
-	</nav>
+	
+  <!-- Navbar code -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <ul class="navbar__ul">
+        <li class="navbar__list" id="logo"><a href="index.html"><h1 class="navbar__logo">MeDiet</h1></a></li>
+        <li class="navbar__list"><a class="navbar__link" href="index.html">Home</a></li>
+        <li class="navbar__list" id="navbar__subhover"><a class="navbar__link" id="navbar_link" href="features.html">Features</a>
+          <ul class="navbar__submenu">
+            <li class="navbar__submenu_list"><a class="navbar__submenu_link" id="modal_trigger1" href="#modal1">BMI Calculator</a></li>
+            <li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Nutrition Calculator</a></li>
+            <li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Calorific Value Chart</a></li>
+            <li class="navbar__submenu_list"><a class="navbar__submenu_link" href="features.html">Balanced Diet Charts</a></li>
+          </ul>
+        </li>
+        <li class="navbar__list"><a class="navbar__link" href="faq.html">FAQs</a></li>
+        <li class="navbar__list"><a class="navbar__link" href="contactus.html">Contact us</a></li>
+      </ul>
+      <a href="#" id="pull">Menu</a>
+    </div>
+  </nav>
+
+  <!-- Feature 1 link model -->
+    <div id="modal1" class="popup" style="display:none;">
+      <section class="popup__body">
+        <div class="popup__header">
+          BMR Calculator
+        </div>
+        <p class="popup__BMI-details">
+          BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25. A score below 20 indicates that you may be underweight; a value above 25 indicates that you may be overweight.Please remember, however, that this is only one of many possible ways to assess your weight.
+        </p>
+        <form class="popup__form">
+          <input type="text"  class = "popup__input" id="height" placeholder = "Height in cm" autocomplete="off">
+          <input type="text" class = "popup__input" id="weight" placeholder = "Weight in kilo" autocomplete="off"><br>          
+          <p class="output"></p>
+          <button id="check" class="btn btn--check">Submit</button>
+        </form>
+
+      </section>
+    </div>
+  <!-- End to model box -->
 
 	<!-- FAQs -->
 
@@ -252,10 +273,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<script type="text/javascript">
-  $("#modal_trigger1").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-  $("#modal_trigger2").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-</script>
 <script src="https://use.fonticons.com/f733972f.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/home.js"></script>

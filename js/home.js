@@ -23,6 +23,7 @@ function init() {
   window.onload = init();
 
 $(document).ready(function(){
+  $("#modal_trigger1").leanModal({top : 170, overlay : 0.6, closeButton: ".modal_close" });
   $(".navbar__submenu").hide();
   $("#navbar__subhover").hover(function(){
     $(".navbar__submenu").show();
@@ -56,10 +57,19 @@ $(document).ready(function(){
     }
   });
 
+  $('input[type="checkbox"]').on('change', function() {
+
+  // uncheck sibling checkboxes (checkboxes on the same row)
+  $(this).siblings().prop('checked', false);
+
+  // uncheck checkboxes in the same column
+  $('div').find('input[type="checkbox"]:eq(' + $(this).index() + ')').not(this).prop('checked', false);
+
+  });
+
   $("#check").click(function(){
     var height = parseInt($("#height").val());
     var weight = parseInt($("#weight").val());
-    var age = parseInt($("#age").val());
     if($.isNumeric(height)) {
 
     }
@@ -73,24 +83,73 @@ $(document).ready(function(){
       alert('Please Enter valid Weight.Only Integer number is allowed');
     }
 
-    if($.isNumeric(age)) {
+    var answer =  weight * 10000  / (height * height);
+    alert("Your BMI is "+answer);
+  });
+
+  $("#check_nut").click(function(){
+    var height = parseInt($("#height_2").val());
+    var weight = parseInt($("#weight_2").val());
+    var age = parseInt($("#age_2").val());
+    if($.isNumeric(height)) {
+
+    }
+    else {
+      alert('Please Enter valid Height.Only Integer number allowed');
+    }
+    if($.isNumeric(weight)) {
       
     }
     else {
-      alert('Please Enter valid age.Only Integer number is allowed');
+      alert('Please Enter valid Weight.Only Integer number is allowed');
     }
 
-    var answer;
-    if ($("#male").prop("checked")) {
-      answer = 66 + ( 13.7 * weight) + ( 5 * height) - ( 6.8 * age);
-      alert("Your BMI is Man"+answer);
-    }else {
-      if($("#female").prop("checked")){
-        answer =  655 + ( 9.6 * weight) + ( 1.8 * height) - ( 4.7 * age);
-        alert("Your BMI is  woman"+answer);
-      }
+    var fat = $( "#fat option:selected" ).text();
+    var work = $( "#work option:selected" ).text();
+    var answer_nut; 
+    if($("#man").is(':checked')){
+      answer_nut = 66 + ( 13.7 * weight) + ( 5 * height) - ( 6.8 * age);
+    }else{
+      answer_nut = 655 + ( 9.6 * weight) + ( 1.8 * height) - ( 4.7 * age);
+    }
+
+
+    if(work == "sedentary"){
+      answer_nut = answer_nut * 1.2;
+    }else if(work == "lightly_active"){
+      answer_nut = answer_nut * 1.375;
+    }else if(work == "moderatetely_active"){
+      answer_nut = answer_nut * 1.55;
+    }else if(work == "very_active"){
+      answer_nut = answer_nut * 1.725;
+    }else if(work == "extra_active"){
+      answer_nut = answer_nut * 1.9;
+    }
+    alert("answer_nut" +answer_nut);
+    
+    
+    if( (answer_nut < 1200 ) || (answer_nut > 1200 && answer_nut < 1300)){
+      alert("1");
+    }
+    else if(answer_nut >= 1300 && answer_nut < 1400){
+      alert("1");
+    }else if(answer_nut >= 1400 && answer_nut < 1500){
+      alert("1");
+    }else if(answer_nut >= 1500 && answer_nut < 1600){
+      alert("1");
+    }else if(answer_nut >= 1600 && answer_nut < 1700){ 
+      alert("1");
+    }else if(answer_nut >= 1700 && answer_nut < 1800){
+      alert("1");
+    }else if(answer_nut >= 1800 && answer_nut < 1900){
+      alert("1");
+    }else if(answer_nut >= 1900 && answer_nut < 2000){
+      alert("1");
+    }else if(answer_nut >= 2000 && answer_nut < 2100){
+      alert("1");
     }
   });
+  
 
 });
 
