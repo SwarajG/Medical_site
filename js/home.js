@@ -20,6 +20,8 @@ function init() {
       }
   });
   }
+
+
   window.onload = init();
 
 $(document).ready(function(){
@@ -84,7 +86,7 @@ $(document).ready(function(){
     }
 
     var answer =  weight * 10000  / (height * height);
-    alert("Your BMI is "+answer);
+    alert("Your BMI is: "+answer + "\n*********************************\n Below 18.5 : Underweight \n 18.5 - 24.99 : Normal Weight \n 25 - 30: Overweight" );
   });
 
   $("#check_nut").click(function(){
@@ -125,25 +127,41 @@ $(document).ready(function(){
     }else if(work == "extra_active"){
       answer_nut = answer_nut * 1.9;
     }
-    alert("answer_nut" +answer_nut);
+    alert("Daily Calorie Needed: " +answer_nut);
     
     
     if( (answer_nut < 1200 ) || (answer_nut > 1200 && answer_nut < 1300)){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_1.html";
+      return false;
     }else if(answer_nut >= 1300 && answer_nut < 1500){
-      alert("1");
-    }else if(answer_nut >= 1500 && answer_nut < 1700){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_2.html";
+      return false;
+     }else if(answer_nut >= 1500 && answer_nut < 1700){
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_3.html";
+      return false;
     }else if(answer_nut >= 1700 && answer_nut < 1900){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_4.html";
+      return false;
     }else if(answer_nut >= 1900 && answer_nut < 2100){ 
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_5.html";
+      return false;
     }else if(answer_nut >= 2100 && answer_nut < 2300){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_6.html";
+      return false;
     }else if(answer_nut >= 2300 && answer_nut < 2500){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_7.html";
+      return false;
     }else if(answer_nut >= 2500){
-      alert("1");
+      document.getElementById('anc').innerHTML="Your Generated Diet";
+      document.getElementById('anc').href ="cat_8.html";
+      return false;
     }
   });
   
