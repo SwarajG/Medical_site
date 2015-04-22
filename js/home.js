@@ -130,22 +130,19 @@ $(document).ready(function(){
     
     if( (answer_nut < 1200 ) || (answer_nut > 1200 && answer_nut < 1300)){
       alert("1");
-    }
-    else if(answer_nut >= 1300 && answer_nut < 1400){
+    }else if(answer_nut >= 1300 && answer_nut < 1500){
       alert("1");
-    }else if(answer_nut >= 1400 && answer_nut < 1500){
+    }else if(answer_nut >= 1500 && answer_nut < 1700){
       alert("1");
-    }else if(answer_nut >= 1500 && answer_nut < 1600){
+    }else if(answer_nut >= 1700 && answer_nut < 1900){
       alert("1");
-    }else if(answer_nut >= 1600 && answer_nut < 1700){ 
+    }else if(answer_nut >= 1900 && answer_nut < 2100){ 
       alert("1");
-    }else if(answer_nut >= 1700 && answer_nut < 1800){
+    }else if(answer_nut >= 2100 && answer_nut < 2300){
       alert("1");
-    }else if(answer_nut >= 1800 && answer_nut < 1900){
+    }else if(answer_nut >= 2300 && answer_nut < 2500){
       alert("1");
-    }else if(answer_nut >= 1900 && answer_nut < 2000){
-      alert("1");
-    }else if(answer_nut >= 2000 && answer_nut < 2100){
+    }else if(answer_nut >= 2500){
       alert("1");
     }
   });

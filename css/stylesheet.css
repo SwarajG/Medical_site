@@ -276,6 +276,7 @@ a:hover , a:visited , a:focus {
 	display: inline-block;
 }
 
+
 .home_content__feature-text {
 	height: 360px;
 	padding: 25px;
@@ -289,11 +290,23 @@ a:hover , a:visited , a:focus {
 
 .home_content__feature-img {
 	height: 360px;
-	background: url('../img/photo1422310299561e3b8b45d859f.jpg') no-repeat center center;
+	
 	background-size: cover;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+}
+
+.image1 {
+	background: url('../img/vit_A.gif') no-repeat center center;
+}
+
+.image2 {
+	background: url('../img/processed_food.jpg') no-repeat center center;
+}
+
+.image3 {
+	background: url('../img/Intro.JPG') no-repeat center center;
 }
 
 .chart {

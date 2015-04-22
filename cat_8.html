@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 </head>
 <body>
 	
@@ -42,7 +44,7 @@
       		BMR Calculator
       	</div>
       	<p class="popup__BMI-details">
-      		BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25.
+      		BMI (Body Mass Index) is a measurement of body fat based on height and weight that applies to both men and women between the ages of 18 and 65 years.BMI can be used to indicate if you are overweight, obese, underweight or normal. A healthy BMI score is between 20 and 25. A score below 20 indicates that you may be underweight; a value above 25 indicates that you may be overweight.Please remember, however, that this is only one of many possible ways to assess your weight.
       	</p>
       	<form class="popup__form">
 	      	<input type="text"  class = "popup__input" id="height" placeholder = "Height in cm" autocomplete="off">
@@ -54,55 +56,96 @@
       </section>
     </div>
   <!-- End to model box -->
-
-	<div class="features">
-		<div class="features__container">
-			<section class="nut_cal">
-				<div class="nut_cal__container">
-					<div class="nut_cal__det">
-						<h1 class="nut_cal__header">Nutrition Calculator</h1>
-						<h2 class="nut_cal__subheader">Description :</h2>
-						<p class="nut_cal__description">
-							In order to calculate the nutrition requirements (calorie consuption) for every day we are using standard BMR calculations.The BMR formula uses the variables of height, weight, age and gender to calculate the Basal Metabolic Rate (BMR). This is more accurate than calculating calorie needs based on body weight alone. 
-						</p>
-						<h2 class="nut_cal__subheader">Modification in BMR :</h2>
-						<p class="nut_cal__description">
-							The only factor it omits is lean body mass and thus the ratio of muscle-to-fat a body has. Remember,leaner bodies need more calories than less leaner ones. Therefore, this equation will be very accurate in all but the very muscular (will underestimate calorie needs) and the very fat (will over-estimate calorie needs).But using reliable soruces we have eliminated the percentage of error by adjusting the BMR value according to body fat.
-						</p>
-					</div>
-					<form class="nut_cal__form">
-						<input type="text" class="popup__input" placeholder = "Height" id="height_2" autocomplete="off"><br>
-						<input type="text" class="popup__input" placeholder = "Weight" id="weight_2" autocomplete="off"><br>
-						<input type="text" class="popup__input" placeholder = "Age" id="age_2" autocomplete="off"><br>
-						<input type="checkbox" id="male" name ="Male" value = "male"/> Male
-		      	<input type="checkbox" id="female" name="Female" value="female" /> Female<br>
-						<select style="margin-top:20px;margin-left:115px;" id="fat">
-							<option value="low" >Low ( < 14% )</option>
-							<option value="medium">Medium ( 14% to 22% )</option>
-							<option value="high">High ( >22% )</option>
-						</select>
-						Examples : <a class="img__link" 
-						href="http://www.builtlean.com/wp-content/uploads/2012/09/body-fat-percentage-men.jpg" target="_blank">men</a> | <a  class="img__link" href="http://www.builtlean.com/wp-content/uploads/2012/09/body-fat-percentage-women.jpg" target="_blank">women</a><br>
-						<select style="margin-top:50px;margin-left:-110px;" id="work">
-							<option value="sedentary">Sedentary</option>
-							<option value="lightly_active">Lightly active</option>
-							<option value="moderatetely_active">Moderatetely active</option>
-							<option value="very_active">Very active</option>
-							<option value="extra_active">Extra active</option>
-						</select><br>
-						<button class="btn btn--nut_cal" id="check_nut">Submit</button>
-					</form>
-				</div>
-			</section>
-
-			
-			<section class="chart_one" id="one">
-				<div class="chart_one__container">
-					
-				</div>
-			</section>
+	<section class="table">
+		<div class="table__container">
+			<table>
+				<thead>
+					<tr>
+						<th>Index No.</th>
+						<th>Timings</th>
+						<th>Food Item</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Early morning</td>
+						<td>
+						Luke warm water with lemon<br>
+						Tea or coffee (with cream) + biscuits
+						</td>
+						<td>
+							1 glass<br>
+							1 cup, 2 Biscuits
+						</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Breakfast</td>
+						<td>
+							Parantha with butter + butter milk.<br> OR <br>
+							Scrambled eggs with cheese toast + whole wheat toast + banana + juice<br> OR <br>
+							Fried cheese toast  with dressing + banana shake<br>
+						</td>
+						<td>
+							2 , 1 glass<br><br>
+							3 , 2 , 2 , 1 glass<br><br>
+							3 , 1 glass<br><br>
+						</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mid-Morning</td>
+						<td>
+							Brown bread with jelly and peanut butter.<br> OR <br>
+							Vegetable salad + crackers<br><br>
+						</td>
+						<td>
+							2<br><br>
+							1 bowl  , 5<br><br>
+						</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td>Lunch</td>
+						<td>
+							Roti  (or parantha) + Mixed vegetable (or panner) + Lentil gravy + Salad + Raita + butter milk<br> OR <br>
+							Parantha +rice + Chicken (or fish gravy) + Lentil gravy + Salad + Raita<br><br>
+						</td>
+						<td>
+							3-4, 1 cup, 1 cups , 1 bowl , 1 small bowl, 1 glass<br><br>
+							3 , 1 bowl, 1 bowl , 1 bowl , 1 bowl , 1 bowl.<br><br>
+						</td>
+					</tr>
+					<tr>
+						<th>5</th>
+						<td>Evening</td>
+						<td>
+							Indian snacks (or cookies)+ whole milk<br> OR <br>
+							Muffin or cupcakes
+						</td>
+						<td>
+							1 bowl , 1 glass<br><br>
+							2 med size<br><br>
+						</td>
+					</tr>
+					<tr>
+						<th>6</th>
+						<td>Dinner</td>
+						<td>
+							Butter Parantha  + lentil gravy + raita + desert<br> OR <br>
+							Rice + fish curry + raita + desert<br>
+						</td>
+						<td>
+							2 , 1 bowl , 1 small bowl , 1 portion<br><br>
+							2 portion , 1bowl , 1 bowl , 1-2portion.
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-	</div>
+	</section>
 	
 	<footer class="footer">
 		<div class="footer__container">
@@ -120,4 +163,7 @@
 <script src="https://use.fonticons.com/f733972f.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+
 </html>
