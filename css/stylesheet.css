@@ -376,6 +376,15 @@ a:hover , a:visited , a:focus {
 	margin-top: 100px;
 }
 
+.table {
+	margin-top: 150px;
+}
+
+.table__container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 /* Contact page */
 .contact_header {
 	margin-top: 170px;
