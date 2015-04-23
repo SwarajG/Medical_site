@@ -290,7 +290,6 @@ a:hover , a:visited , a:focus {
 
 .home_content__feature-img {
 	height: 360px;
-	
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -403,6 +402,92 @@ a:hover , a:visited , a:focus {
 	margin-top: 170px;
 	font-size: 40px;
 	text-align: center;
+}
+
+/*Blog CSS*/
+.blog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	background-color: #29D9C2;
+	color: white;
+	font-size: 28px;
+	text-align: center;
+}
+
+.blog__container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.blog__header {
+	margin-top: 200px;
+}
+
+.blog__content {
+	padding: 10px;
+	margin-top: 500px;
+	text-align: left;
+	color: black;
+}
+
+.blog_content {
+	font-size: 18px;
+}
+
+.blog_content__container {
+	margin: 0 auto;
+	width: 1200px;	
+}
+
+/*Balance_chart*/
+
+.balance {
+	margin-top: 200px;
+}
+
+.balance__container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.balance__img_container {
+	padding: 50px 0;
+	border-bottom: 2px solid black;
+}
+
+
+.balance__img {
+	display: inline-block;
+	width: 50%;
+	height: 360px;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.image4 {
+	background: url('../img/bal_1.JPG') no-repeat center center;
+}
+
+.image5 {
+	background: url('../img/bal_2.JPG') no-repeat center center;
+}
+
+
+.image6 {
+	background: url('../img/bal_3.JPG') no-repeat center center;
+}
+
+.image7 {
+	background: url('../img/bal_4.JPG') no-repeat center center;
+}
+
+.image8 {
+	background: url('../img/bal_5.JPG') no-repeat center center;
 }
 
 /*FAQs*/
